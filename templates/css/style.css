@@ -1,0 +1,479 @@
+html,body {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  height: 100%;
+}
+.absolute{
+    position: absolute;
+}    
+.big {
+    font-size: 60px;
+}
+.marg_top {
+    margin-top: 15px;
+}
+.marg_bot{
+    margin-bottom: 15px;
+}
+.leftmerg{
+    margin-left: -15px;
+}
+.rightmerg{
+    margin-right: -15px;
+}
+.bigmerg {
+    margin-top: 50px;
+}
+.sidepad{
+    padding-left: 0;
+    padding-right: 0;
+}
+.botpad {
+    padding-bottom: 100px;
+}
+.toppad{
+    padding-top: 100px;
+}
+.botpad1 {
+    padding-bottom: 50px;
+}
+.toppad1{
+    padding-top: 50px;
+}
+.padgor{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.smallpad {
+    padding: 15px;
+}
+
+.absolutecenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.center{
+text-align: center;
+}
+
+.labmerg {
+    padding-top: 65px;
+    background-color: #f3f5f6; 
+    width: 100%;
+    min-height: 100%;
+}
+
+
+
+
+.back_lab {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 350px;
+    background-position-y: 50%;
+    background-image: url(../images/collage.jpg);
+    background-size: cover;
+}
+
+.back_footer1 {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #f3f5f6;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: #eee;
+}
+
+.back_footer2 {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(65,88,98);
+}
+
+
+.back_value {
+    background-color: #336E7B ;
+    position: relative;
+    width: 100%;
+    padding: 50px;
+}
+.back_white{
+    background-color: white;
+}
+
+.transparent{
+    background-color: rgba(65,88,98,0.3);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.nontransparent{
+    background-color: rgb(65,88,98);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.orderformtext{
+    border-style: solid;
+    border-width: 0px;
+    border-color: #555;
+    background-color: #f3f5f6;
+    padding: 15px;
+}
+.white{
+    color: white;
+}
+.black{
+    color: #555;
+}
+.img-box{
+    max-width: 200px;
+    max-height: 200px;
+    position: relative;
+}
+.img-heigh{
+    height: 35px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.text-box{
+    height: 80px;
+    background-color: #65C6BB;
+}
+.shadow{
+    -webkit-box-shadow: 2px 10px 20px -8px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 10px 20px -8px rgba(0,0,0,0.5);
+    box-shadow: 2px 10px 20px -8px rgba(0,0,0,0.5);
+}
+.restrict{
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#comment{  
+  /* box-sizing: padding-box; */
+  overflow:hidden;
+  width: 100%;
+}
+/*** effect zoom in ***/
+.image-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-zoom-in img {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+.img-zoom-in:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1)
+}
+
+/* Анимации которые можно сделать
+.circle{
+    background: radial-gradient(white, black);
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation-name: reverse-spin;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+.boxx:hover {
+   Toggle our animation play state to running when we are hovering over our sticker 
+  animation-play-state: running;
+}
+@-webkit-keyframes reverse-spin {
+    0%    { -webkit-transform: rotateY(360deg); }
+    100%  { -webkit-transform: rotateY(0deg); }
+    }
+.boxx{
+    background-color: transparent;
+    height: 100px;
+    width: 100px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-play-state: paused;
+}
+@-webkit-keyframes spin {
+    0%    { -webkit-transform: rotateY(0deg); }
+    100%  { -webkit-transform: rotateY(360deg); }
+    }
+.mergleft{
+    margin-left: 50px;    
+}*/
+/*Анимации икнок что мы используем*/
+@-webkit-keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0,-4px,0);
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -8px, 0);
+    transform: translate3d(0, -8px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -6px, 0);
+    transform: translate3d(0, -6px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0,-3px,0);
+    transform: translate3d(0,-3px,0);
+  }
+}
+
+.anim1 i {
+    -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+.anim1:hover i{    
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+.anim2  i{
+    transition: all 0.4s;
+}
+
+.anim2:hover i{
+    transform: scale(1.2) rotate(180deg);
+}
+
+.anim3  i{
+    transform-origin: left top 0px;
+    transition: all 0.4s ease 0s;
+    -webkit-transform-origin: left top 0px;
+    -webkit-transition: all 0.4s ease 0s;
+}
+
+.anim3:hover i{
+    transform: matrix3d(1,0,0.00,0.02,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
+-webkit-transform: matrix3d(1,0,0.00,0.02,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
+}
+
+.anim4  i{
+    transition: all 0.4s;
+}
+
+.anim4:hover i{
+-webkit-transform: rotateY(180deg);
+-moz-transform: rotateY(180deg);
+-o-transform: rotateY(180deg);
+-ms-transform: rotateY(180deg);
+transform: rotateY(180deg);
+}
+
+
+/* выезжающие надписи к приемуществам*/
+
+.service-details {
+	overflow: hidden;
+	position: relative;
+        
+}
+
+.service-details img {
+	position: relative;
+	width: 100%;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+
+}
+
+.service-details:hover img {
+}
+
+.service-details .service-hover-text{
+	width: 100%;
+	position: absolute;
+        top: 100%;
+        margin-top: -80px;
+        min-height: 70%;
+	color: rgba(255,255,255,1);
+        background-color: inherit; 
+/*	display: none;*/
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s;
+}
+
+.service-details:hover .service-hover-text {
+	display: block !important;
+        position: absolute;
+	color: rgba(255,255,255,1);
+        background-color: inherit; 
+        top: 55%;
+        min-height: 70%;
+}
+
+/* стартовый экран*/
+#myBackground
+{
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	background-position: 50% 50%;
+}
+
+@media only screen and (max-width: 1024px)
+{
+	#myBackground
+	{
+		min-height: 800px;
+	}
+}
+
+@media only screen and (max-width: 640px)
+{
+	#myBackground
+	{
+		min-height: 600px;
+	}
+}
+
+@media only screen and (max-width: 368px)
+{
+	#myBackground
+	{
+		min-height: 500px;
+	}
+}
+
+/*Двигающийся экран*/
+.wrap {
+  height: 100%;  
+  position: relative;
+  overflow: hidden;
+}
+
+  .bg {
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    background: url(../images/mainback.jpg) no-repeat center center;
+    background-size: cover;
+
+    transform: scale(1.1);
+  }
+/*Изменение стилей bootstrap*/
+
+.thumbnail{
+    border-radius: 0px;
+    padding: 3px;
+}
+.blue_vk:hover{
+    color: #45668e;
+}
+.red:hover{
+    color: #dd4b39;
+}
+a:hover,
+a:focus {
+  color: #999;
+  text-decoration: none;
+}
+
+.modal-large {
+    height: auto;
+    width: 1200px;
+        
+}
+
+.btn-transparent {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  border-width: 1px;
+  width: 150px;
+  margin: 30px 30px 30px 30px;
+  border-radius: 3px;
+}
+.btn-transparent:focus,
+.btn-transparent.focus {
+  color: #fff;
+  background-color: rgba(255,255,255,0.4);
+  border-color: rgba(255,255,255,0.2);
+  
+  
+}
+.btn-transparent:hover {
+  color: #fff;
+  background-color: rgba(255,255,255,0.4);
+  border-color: rgba(255,255,255,0.2);
+}
+.btn-transparent:active,
+.btn-transparent.active{
+  color: #fff;
+  background-color: rgba(255,255,255,0.4);
+  border-color: rgba(255,255,255,0.2);
+}
+.btnfix{
+    min-width: 120px;
+}
